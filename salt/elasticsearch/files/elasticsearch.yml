@@ -1,3 +1,7 @@
 network :
     host : {{ salt['grains.get']('ip_interfaces:eth1:0') }}
 script.groovy.sandbox.enabled: true
+node:
+  name: ${HOSTNAME}
+cluster:
+  name: gocluster
