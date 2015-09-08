@@ -21,3 +21,6 @@ If you need to change the ip address due an ip conflict, open the Vagrantfile an
 
 ##NOTES
 On Debian we added the line ```JAVA_OPTS="$JAVA_OPTS -Djava.net.preferIPv4Stack=true"``` to ```elasticsearch.in.sh```, otherwise Elasticsearch will listen only for ipv6 connections.
+
+##PROOF
+https://www.dropbox.com/s/vrs60wlucqfag7h/Screenshot%202015-09-08%2012.34.17.png?dl=0
