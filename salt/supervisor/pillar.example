@@ -1,0 +1,13 @@
+supervisor:
+  program:
+    myapp:
+      command: /path/to/uwsgi --ini /path/to/uwsgi.ini
+      directory: /path/to/app
+      autostart: True
+      autorestart: True
+      user: www-data
+      stopsignal: QUIT
+    mysecondapp:
+      command: /path/to/gunicorn --config /path/to/gunicorn.py wsgi:app
+      directory: /path/to/app
+      autorestart: true
